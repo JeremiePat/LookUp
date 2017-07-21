@@ -119,15 +119,15 @@
     if (type === 'new') {
       FORM.set('id', '');
 
-      title.innerHTML     = _('settingsTitleAdd');
-      add.innerHTML       = _('settingsLabelAdd');
+      title.innerText     = _('settingsTitleAdd');
+      add.innerText       = _('settingsLabelAdd');
       reset.style.display = 'none'
       return
     }
 
     if (type === 'update') {
-      title.innerHTML     = _('settingsTitleUpdate');
-      add.innerHTML       = _('settingsLabelUpdate');
+      title.innerText     = _('settingsTitleUpdate');
+      add.innerText       = _('settingsLabelUpdate');
       reset.style.display = 'inline-block'
       return
     }
