@@ -1,10 +1,17 @@
 {
   "manifest_version": 2,
   "name": "LookUp",
-  "version": "1.0",
+  "version": "1.0.1",
   "default_locale": "en",
 
   "description": "__MSG_AddOnDescription__",
+
+  "applications": {
+    "gecko": {
+      "id": "lookup@patonnier.net",
+      "strict_min_version": "47.0"
+    }
+  },
 
   "icons": {
     "48": "icons/icon-48.png",
