@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <style>
+    path {
+      fill: none;
+      stroke: #BBB;
+      stroke-width: 1.5px;
+    }
+
+    #active:target path {
+      stroke: #FFF
+    }
+  </style>
+
+  <g id="active">
+    <path d="M3,7 L6,10 L13,3" />
+  </g>
+</svg>

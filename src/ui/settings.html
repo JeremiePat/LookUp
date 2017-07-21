@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Extention Settings</title>
+<link rel="stylesheet" href="settings.css">
+<script src="../lib/browser-polyfill.js"></script>
+<script src="../lib/l10n.js"></script>
+<script src="../lib/storage.js"></script>
+<script src="../lib/rules.js"></script>
+<script src="../lib/utils.form.js"></script>
+<script src="../lib/ui.form.js"></script>
+<script src="../lib/ui.table.js"></script>
+<script src="../lib/io.json.js"></script>
+<script src="settings.js"></script>
+
+<section>
+  <h1 id="title" data-l10n="settingsTitleAdd">Add a new look up rule</h1>
+  <form>
+    <input type="hidden" name="id">
+
+    <p id="error"></p>
+
+    <p>
+      <label for="name" data-l10n="settingsLabelName">Name:</label>
+      <input type="text" id="name" name="name">
+    </p>
+
+    <p>
+      <label for="description" data-l10n="settingsLabelDescription">Description:</label>
+      <textarea id="description" name="description"></textarea>
+    </p>
+
+    <p>
+      <label for="protocol"  data-l10n="settingsLabelTarget">Target:</label>
+      <span class="liner">
+        <select name="protocol">
+          <option value="https?://">*</option>
+          <option value="https://" >https</option>
+          <option value="http://"  >http</option>
+        </select>
+        <span>&nbsp;://&nbsp;</span>
+        <input
+          type="text" name="domain"
+          data-l10n-placeholder="settingsPlaceholderDomain"
+          placeholder="domain">
+        <span>&nbsp;/&nbsp;</span>
+        <input
+          type="text" name="pattern"
+          data-l10n-placeholder="settingsPlaceholderURI"
+          placeholder="URI pattern">
+      </span>
+    </p>
+
+    <p>
+      <label for="operator" data-l10n="settingsLabelRule">Rule:</label>
+      <span class="liner">
+        <span data-l10n="settingsLabelFind">Find</span>
+        <select name="operator">
+          <option value="exactly"  data-l10n="settingsLabelExactly">exactly</option>
+          <option value="moreThan" data-l10n="settingsLabelMore"   >more than</option>
+          <option value="lessThan" data-l10n="settingsLabelLess"   >less than</option>
+        </select>
+        <input name="number" type="number" value="1" min="0" step="1">
+        <select name="type">
+          <option data-l10n="settingsLabelText">text</option>
+          <option data-l10n="settingsLabelNode">node</option>
+        </select>
+        <span data-l10n="settingsLabelMatch">&nbsp;matching&nbsp;</span>
+        <input
+          type="text" name="selector"
+          data-l10n-placeholder="settingsPlaceholderSelector"
+          placeholder="text pattern/css selector">
+      </span>
+    </p>
+
+    <p>
+      <button class="add"   type="button" data-l10n="settingsLabelAdd">Add</button>
+      <button class="reset" type="reset"  data-l10n="settingsLabelReset">Reset</button>
+    </p>
+  </form>
+</section>
+
+<section>
+  <h1 data-l10n="settingsTitleRule">Existing rules</h1>
+  <div id="rules"></div>
+  <p>
+    <button class="import" data-l10n="settingsLabelImport">Import rules</button>
+    <input type="file" id="importer" hidden>
+    <button class="export" data-l10n="settingsLabelExport">Export rules</button>
+  </p>
+</section>

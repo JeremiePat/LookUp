@@ -1,0 +1,235 @@
+
+/* RULES : List of rules available
+/* ------------------------------------------------------------------------- */
+
+#rules {
+  /* Box sizing */
+  max-width: 40rem;
+}
+
+#rules h2 {
+  /* Fonts */
+  font: bold 1rem sans-serif;
+
+  /* Box sizing */
+  margin: 0;
+}
+
+#rules header {
+  /* Box sizing */
+  padding-bottom: .3rem;
+
+  /* Box border */
+  border-bottom: 1px solid #BBB;
+
+  /* Box layout */
+  display: flex;
+  align-items: flex-end;
+}
+
+#rules header + p {
+  /* Fonts */
+  font-style: italic;
+  font-size: .9rem;
+
+  /* Box sizing */
+  margin: .3rem 0 2rem;
+}
+
+#rules header div {
+  /* Box layout */
+  flex: 1;
+}
+
+#rules code {
+  /* Fonts */
+  font-size:.9rem;
+}
+
+#rules code:before {
+  /* Box content */
+  content: '';
+
+  /* Box sizing */
+  margin-right: .3rem;
+  width  : .9rem;
+  height : .9rem;
+
+  /* Box layout */
+  display: inline-block;
+
+  /* Background & colors */
+  background-repeat: no-repeat;
+  background-size  : .9rem .9rem;
+}
+
+#rules code.http:before {
+  /* Background & colors */
+  background-image: url("img/locker.svg");
+}
+
+#rules code.https:before  {
+  /* Background & colors */
+  background-image: url("img/locker.svg#secure");
+}
+
+#rules code.both:before  {
+  /* Box layout */
+  display: none;
+}
+
+#rules button {
+  /* Box sizing */
+  margin-left: .3rem;
+  padding: 0;
+  width: 1.7rem;
+  height: 1.7rem;
+
+  /* Box border */
+  border: none;
+  border-radius: 3px;
+
+  /* Box layout */
+  position: relative;
+
+  /* Background & colors */
+  background: none;
+  background-size: cover;
+
+  /* Misc */
+  cursor: pointer;
+}
+
+#rules button.edit {
+  /* Background & colors */
+  background-image: url("img/edit.svg");
+}
+
+#rules button.remove {
+  /* Background & colors */
+  background-image: url("img/remove.svg");
+}
+
+#rules button.edit:hover {
+  /* Background & colors */
+  background-image: url("img/edit.svg#active");
+  background-color: #039;
+
+  /* Transition & animation */
+  transition: background-color 500ms;
+}
+
+#rules button.remove:hover {
+  /* Background & colors */
+  background-image: url("img/remove.svg#active");
+  background-color: #900;
+
+  /* Transition & animation */
+  transition: background-color 500ms;
+}
+
+/* FORM : Add or edit rules
+/* ------------------------------------------------------------------------- */
+
+form {
+  /* Box sizing */
+  max-width: 40rem;
+}
+
+label {
+  /* Box layout */
+  display: block;
+}
+
+::placeholder {
+  /* Fonts */
+  font-style: italic;
+
+  /* Background & colors */
+  color: #777;
+}
+
+button.reset {
+  /* Box layout */
+  display: none;
+}
+
+textarea {
+  /* Box sizing */
+  height: 8rem;
+  resize: vertical;
+}
+
+textarea,
+[name=name] {
+  /* Box sizing */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input, textarea, .liner {
+  /* Fonts */
+  font: .9rem sans-serif;
+
+  /* Box sizing */
+  padding: .3rem .3rem .2rem;
+
+  /* Box border */
+  border: 1px solid #DCDCDC;
+
+  /* Background & colors */
+  background: #FFF;
+}
+
+input[type=number] {
+  /* Box sizing */
+  margin-left: .5rem;
+  width:2.5rem;
+}
+
+.liner {
+  /* Box layout */
+  display: flex;
+  align-items: center;
+}
+
+.liner input {
+  /* Box sizing */
+  padding: 0;
+
+  /* Box border */
+  border: none;
+
+  /* Background & colors */
+  background: none;
+}
+
+.liner input[type=text] {
+  /* Box layout */
+  flex: 1;
+}
+
+.liner input[name=pattern] {
+  /* Box layout */
+  flex: 2;
+}
+
+.liner select {
+  /* Box border */
+  border: none;
+}
+
+#error {
+  /* Box sizing */
+  padding: .8rem;
+
+  /* Box border */
+  border: 1px solid #900;
+
+  /* Box layout */
+  display: none;
+
+  /* Background & colors */
+  background: #FCC;
+  color: #900;
+}

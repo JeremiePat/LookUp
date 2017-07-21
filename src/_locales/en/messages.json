@@ -1,0 +1,133 @@
+{
+  "AddOnDescription": {
+    "message": "Create your own rules to look into pages for any type of text content or HTML node."
+  },
+
+  "panelTitle": {
+    "message": "Results for this page"
+  },
+
+  "panelLabelAdd": {
+    "message": "+ Add a new rule"
+  },
+
+  "panelLabelEdit": {
+    "message": "Edit"
+  },
+
+  "panelLabelRemove": {
+    "message": "Delete"
+  },
+
+  "settingsTitleAdd": {
+    "message": "Add a new look up rule"
+  },
+
+  "settingsTitleUpdate": {
+    "message": "Update a look up rule"
+  },
+
+  "settingsTitleRule": {
+    "message": "Existing rules"
+  },
+
+  "settingsLabelName": {
+    "message": "Name:"
+  },
+
+  "settingsLabelDescription": {
+    "message": "Description:"
+  },
+
+  "settingsLabelTarget": {
+    "message": "Target:"
+  },
+
+  "settingsLabelRule": {
+    "message": "Rule:"
+  },
+
+  "settingsLabelFind": {
+    "message": "Find"
+  },
+
+  "settingsLabelExactly": {
+    "message": "exactly"
+  },
+
+  "settingsLabelMore": {
+    "message": "more than"
+  },
+
+  "settingsLabelLess": {
+    "message": "less than"
+  },
+
+  "settingsLabelText": {
+    "message": "text"
+  },
+
+  "settingsLabelNode": {
+    "message": "node"
+  },
+
+  "settingsLabelMatch": {
+    "message": " matching "
+  },
+
+  "settingsLabelAdd": {
+    "message": "Add"
+  },
+
+  "settingsLabelUpdate": {
+    "message": "Update"
+  },
+
+  "settingsLabelReset": {
+    "message": "Reset"
+  },
+
+  "settingsLabelImport": {
+    "message": "Import rules"
+  },
+
+  "settingsLabelExport": {
+    "message": "Export rules"
+  },
+
+  "settingsPlaceholderDomain": {
+    "message": "Domain"
+  },
+
+  "settingsPlaceholderURI": {
+    "message": "URI pattern"
+  },
+
+  "settingsPlaceholderSelector": {
+    "message": "Text pattern/CSS selector"
+  },
+
+  "settingsErrorDomain": {
+    "message": "A domain name must be provided"
+  },
+
+  "settingsErrorName": {
+    "message": "A name must be provided"
+  },
+
+  "settingsErrorDescription": {
+    "message": "A description must be provided"
+  },
+
+  "settingsErrorSelector": {
+    "message": "A selector or pattern must be provided"
+  },
+
+  "ruleErrorClear": {
+    "message": "You must provide an ID to clear a rule."
+  },
+
+  "ruleErrorGet": {
+    "message": "You must provide an ID to get a rule."
+  }
+}

@@ -1,0 +1,132 @@
+body {
+  /* Fonts */
+  font: .8rem sans-serif;
+
+  /* Box sizing */
+  margin: 0;
+  padding: 0;
+  min-width: 15rem;
+  max-width: 35rem;
+  overflow-y: visible;
+
+  /* Background & colors */
+  background: rgb(245,245,245);
+
+}
+
+header, footer {
+  /* Background & colors */
+  background: rgb(230,230,230);
+}
+
+header {
+  /* Box sizing */
+  padding: .75rem .75rem .5rem;
+
+  /* Box border */
+  border-bottom: 1px solid #CCC;
+}
+
+footer {
+  /* Box sizing */
+  padding: .75rem;
+
+  /* text layout */
+  text-align: center;
+}
+
+h1 {
+  /* Fonts */
+  font-size: 1rem;
+
+  /* Box sizing */
+  margin: 0;
+}
+
+ul {
+  /* List style */
+  list-style: none;
+
+  /* Box sizing */
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  /* Box sizing */
+  margin: 0;
+
+  /* Box border */
+  border-bottom: 1px solid #CCC;
+
+  /* Box layout */
+  display: flex;
+}
+
+li p {
+  /* Box sizing */
+  margin: 0;
+  padding: .6rem .5rem .4rem;
+
+  /* Box layout */
+  flex: 1;
+}
+
+li small {
+  /* Fonts */
+  font-size: .7rem;
+
+  /* Box sizing */
+  padding-top: .3rem;
+}
+
+li::before {
+  /* Box content */
+  content: '';
+
+  /* Box sizing */
+  width: 2rem;
+  height: 1fs;
+
+  /* Box layout */
+  display: block;
+
+  /* Background & colors */
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  background-position: center .5rem;
+}
+
+.success::before {
+  /* Background & colors */
+  background-color: hsl(110,100%,25%);
+  background-image: url(img/check.svg#active);
+}
+
+.success small {
+  /* Box layout */
+  display: none;
+}
+
+.fail::before {
+  /* Background & colors */
+  background-color: hsl(0,100%,30%);
+  background-image: url(img/remove.svg#active);
+}
+
+.fail p {
+  /* Fonts */
+  font-weight: bold;
+
+  /* Box sizing */
+  padding-bottom: .5rem;
+}
+
+.fail small {
+  /* Fonts */
+  font-style: italic;
+  font-weight: normal;
+
+  /* Box layout */
+  display: block;
+}

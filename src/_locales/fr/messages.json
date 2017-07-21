@@ -1,0 +1,133 @@
+{
+  "AddOnDescription": {
+    "message": "Créez vos propre règles d'observation pour trouver tout type de texte ou de noeud HTML."
+  },
+
+  "panelTitle": {
+    "message": "Résultats de cette page"
+  },
+
+  "panelLabelAdd": {
+    "message": "+ Ajouter une nouvelle règle"
+  },
+
+  "panelLabelEdit": {
+    "message": "Modifier"
+  },
+
+  "panelLabelRemove": {
+    "message": "Supprimer"
+  },
+
+  "settingsTitleAdd": {
+    "message": "Ajouter une nouvelle règle d'observation"
+  },
+
+  "settingsTitleUpdate": {
+    "message": "Mettre à jour une règle d'observation"
+  },
+
+  "settingsTitleRule": {
+    "message": "Règles existantes"
+  },
+
+  "settingsLabelName": {
+    "message": "Titre :"
+  },
+
+  "settingsLabelDescription": {
+    "message": "Description :"
+  },
+
+  "settingsLabelTarget": {
+    "message": "Cible :"
+  },
+
+  "settingsLabelRule": {
+    "message": "Règle :"
+  },
+
+  "settingsLabelFind": {
+    "message": "Trouver"
+  },
+
+  "settingsLabelExactly": {
+    "message": "exactement"
+  },
+
+  "settingsLabelMore": {
+    "message": "plus de"
+  },
+
+  "settingsLabelLess": {
+    "message": "moins de"
+  },
+
+  "settingsLabelText": {
+    "message": "texte"
+  },
+
+  "settingsLabelNode": {
+    "message": "noeud"
+  },
+
+  "settingsLabelMatch": {
+    "message": " correspondant à "
+  },
+
+  "settingsLabelAdd": {
+    "message": "Ajouter"
+  },
+
+  "settingsLabelUpdate": {
+    "message": "Mettre à jour"
+  },
+
+  "settingsLabelReset": {
+    "message": "Annuler"
+  },
+
+  "settingsLabelImport": {
+    "message": "Importer des règles"
+  },
+
+  "settingsLabelExport": {
+    "message": "Exporter les règles"
+  },
+
+  "settingsPlaceholderDomain": {
+    "message": "Domaine"
+  },
+
+  "settingsPlaceholderURI": {
+    "message": "Motif d'URI"
+  },
+
+  "settingsPlaceholderSelector": {
+    "message": "Motif de texte/sélecteur CSS"
+  },
+
+  "settingsErrorDomain": {
+    "message": "Votre règle doit correspondre à un domaine donné."
+  },
+
+  "settingsErrorName": {
+    "message": "Votre règle doit avoir un titre."
+  },
+
+  "settingsErrorDescription": {
+    "message": "Votre règle doit avoir une description."
+  },
+
+  "settingsErrorSelector": {
+    "message": "Votre règle doit avoir un sélecteur ou un motif."
+  },
+
+  "ruleErrorClear": {
+    "message": "Vous devez préciser un ID pour supprimer une règle."
+  },
+
+  "ruleErrorGet": {
+    "message": "Vous devez préciser un ID pour accéder à une règle."
+  }
+}
