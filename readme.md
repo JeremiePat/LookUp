@@ -17,7 +17,7 @@ use cases:
 Compatibility:
 -------------------------------------------------------------------------------
 
-- Firefox: **OK**
-- Chrome: **OK**
+- Firefox: **[OK](https://addons.mozilla.org/fr/firefox/addon/look-in-page/)**
+- Chrome: **[OK](https://chrome.google.com/webstore/detail/lookup/pmjnimakanocgkjigecapdmnmfiblflg)**
 - Opera: _Untested_ (but should work)
 - Edge: _Untested_ (but should break)
