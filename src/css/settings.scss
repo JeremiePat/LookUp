@@ -65,12 +65,12 @@
 
 #rules code.http:before {
   /* Background & colors */
-  background-image: url("img/locker.svg");
+  background-image: url("../img/locker.svg");
 }
 
 #rules code.https:before  {
   /* Background & colors */
-  background-image: url("img/locker.svg#secure");
+  background-image: url("../img/locker.svg#secure");
 }
 
 #rules code.both:before  {
@@ -102,17 +102,17 @@
 
 #rules button.edit {
   /* Background & colors */
-  background-image: url("img/edit.svg");
+  background-image: url("../img/edit.svg");
 }
 
 #rules button.remove {
   /* Background & colors */
-  background-image: url("img/remove.svg");
+  background-image: url("../img/remove.svg");
 }
 
 #rules button.edit:hover {
   /* Background & colors */
-  background-image: url("img/edit.svg#active");
+  background-image: url("../img/edit.svg#active");
   background-color: #039;
 
   /* Transition & animation */
@@ -121,7 +121,7 @@
 
 #rules button.remove:hover {
   /* Background & colors */
-  background-image: url("img/remove.svg#active");
+  background-image: url("../img/remove.svg#active");
   background-color: #900;
 
   /* Transition & animation */

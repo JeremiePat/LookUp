@@ -100,7 +100,7 @@ li::before {
 .success::before {
   /* Background & colors */
   background-color: hsl(110,100%,25%);
-  background-image: url(img/check.svg#active);
+  background-image: url(../img/check.svg#active);
 }
 
 .success small {
@@ -111,7 +111,7 @@ li::before {
 .fail::before {
   /* Background & colors */
   background-color: hsl(0,100%,30%);
-  background-image: url(img/remove.svg#active);
+  background-image: url(../img/remove.svg#active);
 }
 
 .fail p {

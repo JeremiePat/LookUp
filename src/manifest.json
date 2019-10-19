@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "LookUp",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "default_locale": "en",
 
   "description": "__MSG_AddOnDescription__",
@@ -9,13 +9,13 @@
   "applications": {
     "gecko": {
       "id": "lookup@patonnier.net",
-      "strict_min_version": "47.0"
+      "strict_min_version": "68.0"
     }
   },
 
   "icons": {
-    "48": "icons/icon-48.png",
-    "96": "icons/icon-96.png"
+    "48": "img/icons/icon-48.png",
+    "96": "img/icons/icon-96.png"
   },
 
   "permissions": [
@@ -27,27 +27,27 @@
 
   "background": {
     "scripts": [
-      "lib/browser-polyfill.js",
-      "lib/storage.js",
-      "background.js"
+      "js/vendor/browser-polyfill.js",
+      "js/lib/storage.js",
+      "js/background.js"
     ]
   },
 
   "content_scripts": [{
     "matches": ["<all_urls>"],
     "js": [
-      "lib/browser-polyfill.js",
-      "inspector.js"
+      "js/vendor/browser-polyfill.js",
+      "js/inspector.js"
     ]
   }],
 
   "options_ui": {
-    "page": "ui/settings.html"
+    "page": "settings.html"
   },
 
   "browser_action": {
-    "default_icon" : "icons/icon-48.png",
+    "default_icon" : "img/icons/icon-48.png",
     "default_title": "LookUp",
-    "default_popup": "ui/panel.html"
+    "default_popup": "panel.html"
   }
 }
