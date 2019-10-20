@@ -1,50 +1,42 @@
-(function (LKP) {
-  "use strict";
+// ==========================================================================
+// The ui.list toolbox intent to handle HTML lists where needed.
+// ==========================================================================
 
-  // ==========================================================================
-  // The ui.list toolbox intent to handle HTML lists where needed.
-  // ==========================================================================
+// /!\ DEPENDANCES /!\
+// --------------------------------------------------------------------------
+// /!\ Make sure the proper modules have been properly imported
+import { rulesManager } from './rules.js'
+const STORAGE = window._lkp_store
 
-  // /!\ DEPENDANCES /!\
-  // --------------------------------------------------------------------------
-  // /!\ Make sure the proper modules have been properly imported
+// MODULE LOGIC
+// --------------------------------------------------------------------------
 
-  const STORAGE = LKP.storage;
-  const RULES   = LKP.rulesManager;
+async function listPanel (tabId) {
+  const results = await STORAGE.results.get(tabId)
+  if (!Array.isArray(results)) { return }
 
+  const list = document.querySelector('ul')
 
-  // MODULE LOGIC
-  // --------------------------------------------------------------------------
+  list.innerHTML = ''
 
-  async function panel(tabId) {
-    var results = await STORAGE.results.get(tabId);
-    var list    = document.querySelector('ul');
+  for (const result of results) {
+    const rule = await rulesManager.get(result.id)
+    const cls = result.pass ? 'success' : 'fail'
+    const title = rule.name
+    const description = rule.description
 
-    list.innerHTML = '';
-
-    for (let result of results) {
-      var rule        = await RULES.get(result.id);
-      var cls         = result.pass ? 'success' : 'fail';
-      var title       = rule.name;
-      var description = rule.description;
-
-      list.insertAdjacentHTML(
-        'beforeend',
-        `
-        <li class="${cls}">
-          <p>${title}
-            <small>${description}</small>
-          </p>
-        </li>`)
-    }
+    list.insertAdjacentHTML(
+      'beforeend',
+      `
+      <li class="${cls}">
+        <p>${title}
+          <small>${description}</small>
+        </p>
+      </li>`)
   }
+}
 
+// PUBLIC API
+// --------------------------------------------------------------------------
 
-  // PUBLIC API
-  // --------------------------------------------------------------------------
-  LKP.ui = LKP.ui || {}
-  LKP.ui.list = {
-    panel
-  }
-
-}(window.LKP || (window.LKP = {})));
+export { listPanel }
