@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+
+<link rel="stylesheet" href="{{ cssFile }}">
+<script src="js/vendor/browser-polyfill.js"></script>
+<script src="js/lib/storage.js"></script>
+<script src="{{ jsFile }}" type="module"></script>
+
+<main>
+  {% block main %}{% endblock %}
+</main>
