@@ -3,233 +3,232 @@
 /* ------------------------------------------------------------------------- */
 
 #rules {
-  /* Box sizing */
+  // Box Model
   max-width: 40rem;
-}
 
-#rules h2 {
-  /* Fonts */
-  font: bold 1rem sans-serif;
+  h2 {
+    // Font & Text
+    font: bold 1rem sans-serif;
 
-  /* Box sizing */
-  margin: 0;
-}
+    // Box Model
+    margin: 0;
+  }
 
-#rules header {
-  /* Box sizing */
-  padding-bottom: .3rem;
+  header {
+    // Box Model
+    display: flex;
+    padding-bottom: 0.3rem;
 
-  /* Box border */
-  border-bottom: 1px solid #BBB;
+    // Flex
+    align-items: flex-end;
 
-  /* Box layout */
-  display: flex;
-  align-items: flex-end;
-}
+    // Border
+    border-bottom: 1px solid #BBB;
+  }
 
-#rules header + p {
-  /* Fonts */
-  font-style: italic;
-  font-size: .9rem;
+  header + p {
+    // Font & Text
+    font-size: 0.9rem;
+    font-style: italic;
 
-  /* Box sizing */
-  margin: .3rem 0 2rem;
-}
+    // Box Model
+    margin: 0.3rem 0 2rem;
+  }
 
-#rules header div {
-  /* Box layout */
-  flex: 1;
-}
+  header div {
+    // Flex
+    flex: 1;
+  }
 
-#rules code {
-  /* Fonts */
-  font-size:.9rem;
-}
+  code {
+    // Font & Text
+    font-size: 0.9rem;
+  }
 
-#rules code:before {
-  /* Box content */
-  content: '';
+  code::before {
+    content: '';
 
-  /* Box sizing */
-  margin-right: .3rem;
-  width  : .9rem;
-  height : .9rem;
+    // Box Model
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.3rem;
 
-  /* Box layout */
-  display: inline-block;
+    // Background
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
 
-  /* Background & colors */
-  background-repeat: no-repeat;
-  background-size  : .9rem .9rem;
-}
+  code.http::before {
+    // Background
+    background-image: url(../img/locker.svg);
+  }
 
-#rules code.http:before {
-  /* Background & colors */
-  background-image: url("../img/locker.svg");
-}
+  code.https::before {
+    // Background
+    background-image: url(../img/locker.svg#secure);
+  }
 
-#rules code.https:before  {
-  /* Background & colors */
-  background-image: url("../img/locker.svg#secure");
-}
+  code.both::before {
+    // Box Model
+    display: none;
+  }
 
-#rules code.both:before  {
-  /* Box layout */
-  display: none;
-}
+  button {
+    // Box Model
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 0.3rem;
+    padding: 0;
 
-#rules button {
-  /* Box sizing */
-  margin-left: .3rem;
-  padding: 0;
-  width: 1.7rem;
-  height: 1.7rem;
+    // Position
+    position: relative;
 
-  /* Box border */
-  border: none;
-  border-radius: 3px;
+    // Background
+    background: none;
+    background-size: cover;
 
-  /* Box layout */
-  position: relative;
+    // Border
+    border: none;
+    border-radius: 3px;
 
-  /* Background & colors */
-  background: none;
-  background-size: cover;
+    // Misc
+    cursor: pointer;
+  }
 
-  /* Misc */
-  cursor: pointer;
-}
+  button.edit {
+    // Background
+    background-image: url(../img/edit.svg);
+  }
 
-#rules button.edit {
-  /* Background & colors */
-  background-image: url("../img/edit.svg");
-}
+  button.remove {
+    // Background
+    background-image: url(../img/remove.svg);
+  }
 
-#rules button.remove {
-  /* Background & colors */
-  background-image: url("../img/remove.svg");
-}
+  button.edit:hover {
+    // Background
+    background-color: #039;
+    background-image: url(../img/edit.svg#active);
 
-#rules button.edit:hover {
-  /* Background & colors */
-  background-image: url("../img/edit.svg#active");
-  background-color: #039;
+    // Transition
+    transition: background-color 500ms;
+  }
 
-  /* Transition & animation */
-  transition: background-color 500ms;
-}
+  button.remove:hover {
+    // Background
+    background-color: #900;
+    background-image: url("../img/remove.svg#active");
 
-#rules button.remove:hover {
-  /* Background & colors */
-  background-image: url("../img/remove.svg#active");
-  background-color: #900;
-
-  /* Transition & animation */
-  transition: background-color 500ms;
+    // Transition
+    transition: background-color 500ms;
+  }
 }
 
 /* FORM : Add or edit rules
 /* ------------------------------------------------------------------------- */
 
 form {
-  /* Box sizing */
+  // Box Model
   max-width: 40rem;
 }
 
 label {
-  /* Box layout */
+  // Box Model
   display: block;
 }
 
 ::placeholder {
-  /* Fonts */
-  font-style: italic;
-
-  /* Background & colors */
+  // Font & Text
   color: #777;
+  font-style: italic;
 }
 
 button.reset {
-  /* Box layout */
+  // Box Model
   display: none;
 }
 
 textarea {
-  /* Box sizing */
+  // Box Model
   height: 8rem;
   resize: vertical;
 }
 
 textarea,
 [name=name] {
-  /* Box sizing */
-  width: 100%;
+  // Box Model
   box-sizing: border-box;
+  width: 100%;
 }
 
-input, textarea, .liner {
-  /* Fonts */
-  font: .9rem sans-serif;
+input,
+textarea,
+.liner {
+  // Font & Text
+  font: 0.9rem sans-serif;
 
-  /* Box sizing */
-  padding: .3rem .3rem .2rem;
+  // Box Model
+  padding: 0.3rem 0.3rem 0.2rem;
 
-  /* Box border */
-  border: 1px solid #DCDCDC;
-
-  /* Background & colors */
+  // Background
   background: #FFF;
+
+  // Border
+  border: 1px solid #DCDCDC;
 }
 
 input[type=number] {
-  /* Box sizing */
-  margin-left: .5rem;
-  width:2.5rem;
+  // Box Model
+  width: 2.5rem;
+  margin-left: 0.5rem;
 }
 
 .liner {
-  /* Box layout */
+  // Box Model
   display: flex;
+
+  // Flex
   align-items: center;
-}
 
-.liner input {
-  /* Box sizing */
-  padding: 0;
+  input {
+    // Box Model
+    padding: 0;
 
-  /* Box border */
-  border: none;
+    // Background
+    background: none;
 
-  /* Background & colors */
-  background: none;
-}
+    // Border
+    border: none;
+  }
 
-.liner input[type=text] {
-  /* Box layout */
-  flex: 1;
-}
+  input[type=text] {
+    // Box Model
+    flex: 1;
+  }
 
-.liner input[name=pattern] {
-  /* Box layout */
-  flex: 2;
-}
+  input[name=pattern] {
+    // Box Model
+    flex: 2;
+  }
 
-.liner select {
-  /* Box border */
-  border: none;
+  select {
+    // Border
+    border: none;
+  }
 }
 
 #error {
-  /* Box sizing */
-  padding: .8rem;
-
-  /* Box border */
-  border: 1px solid #900;
-
-  /* Box layout */
-  display: none;
-
-  /* Background & colors */
-  background: #FCC;
+  // Font & Text
   color: #900;
+
+  // Box Model
+  display: none;
+  padding: 0.8rem;
+
+  // Background
+  background: #FCC;
+
+  // Border
+  border: 1px solid #900;
 }
