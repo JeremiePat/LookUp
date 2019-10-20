@@ -7,7 +7,7 @@ const sass = require('sass')
 const imagemin = require('gulp-imagemin')
 const beautify = require('gulp-beautify')
 const nunjucks = require('gulp-nunjucks')
-const { src, dest, series, parallel } = require('gulp')
+const { src, dest, series, parallel, watch } = require('gulp')
 
 const { version, dependencies } = require(path.join(__dirname, 'package.json'))
 
@@ -107,3 +107,6 @@ exports.build = build
 exports.clear = clear
 exports.pack = pack
 exports.make = make
+exports.watch = () => {
+  return watch('src/**/*', build)
+}
