@@ -107,7 +107,6 @@
   }
 
   async function onChanged (info) {
-    console.log('Trigger onChange')
     if (info.rules) {
       await STORAGE.results.clear()
     }
@@ -120,6 +119,6 @@
   browser.storage.onChanged.addListener(onChanged)
 
   // When the tabs change we update the results for the active tab
-  browser.tabs.onActivated.addListener(onActivated)
-  browser.tabs.onUpdated.addListener(onUpdated)
+  browser.tabs.onActivated.addListener(onActivated) // Switch tab
+  browser.tabs.onUpdated.addListener(onUpdated) // Reload tab
 })()
